@@ -1,0 +1,23 @@
+body {
+    background-image: url(star.png);    
+}
+blockquote {
+    background-image: url(dot.png);
+    padding: 2em;
+    border: 4px dashed;    
+}
+/* Ví dụ, nếu chỉ muốn ảnh nền xuất hiện một lần, sử dụng giá trị no-repeat */
+body {
+    background-image: url(star.png);
+    background-repeat: no-repeat;    
+}
+/* Ví dụ, nếu chỉ muốn ảnh nền lặp lại trên một hàng ngang, sử dụng giá trị repeat-x */
+body {
+    background-image: url(star.png);    
+    background-repeat: no-repeat;  
+}
+/* Ví dụ, nếu chỉ muốn ảnh nền lặp lại trên một hàng dọc, sử dụng giá trị repeat-y */
+body {
+    background-image: url(star.png);
+    background-repeat: repeat-y;
+}

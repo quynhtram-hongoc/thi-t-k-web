@@ -1,0 +1,81 @@
+:root{
+    --mau1: rgb(255, 255, 255);
+    --mau2: rgb(255, 255, 255);
+    --mau3: green;
+    --text: #26ade4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    margin: 2px;
+    padding: 2px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background:url(thongdep.png) ;
+}
+.text{
+    margin-bottom: 40px;
+    position: relative;
+
+}
+.text input{
+    width: 90%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+    padding-left: 12px;
+}
+.text label{
+    position: absolute;
+    left: 20px;
+    bottom: 12px;
+    transition: 0.5s;
+    
+}
+.login{
+    background:url(noel.png);
+    border-radius: 20px;
+    height: 500px;
+    width: 400px;
+    
+}
+.login h1{
+    margin-bottom: 70px;
+    padding-top: 60px;
+    
+}
+.login button {
+    height: 35px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background:rgb(11, 64, 11);
+    border-radius: 20px;
+    color: white;
+    background-size: 200%;
+    font: size 40px;
+ }
+.login span a
+{
+    color: black;
+}
+.login button:hover{
+    background-position: right;
+}
+.text label.focus{
+    transform: translateY(-45px);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <div class="container">
+    <form class="login">
+        <h1>Đăng nhập</h1>
+        <div class="text">
+            <label>Username</label>
+            <input type="text">
+        </div>
+        <div class="text">
+            <label>Password</label>
+            <input type="password">
+        </div>
+        <button>Đăng nhập</button><br>
+        <button>Đăng ký</button><br>
+    </form>
+</div>
+<script> 
+    const Login = document.querySelectorAll('.text input')
+    const Label = document.querySelectorAll('.text label')
+    for(let i =0;i<2;i++){
+        Login[i].addEventListener("mouseover",function(){
+            Label[i].classList.add("focus")
+        })
+        Login[i].addEventListener("mouseout",function(){
+            if(Login[i].value ==""){
+                Label[i].classList.remove("focus")
+            }
+        })
+    }
+</script>
+</body>
+</html>
